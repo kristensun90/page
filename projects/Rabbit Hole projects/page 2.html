@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dog Likes</title>
+  <style>
+    body {
+      background-color: #fffaf3;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+      position: relative;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .link {
+      position: absolute;
+      font-size: 18px;
+      font-weight: bold;
+      color: #5a3212;
+      text-decoration: none;
+      padding: 6px 10px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .link:hover {
+      background-color: #5a3212;
+      color: white;
+    }
+
+    /* Initial random positions */
+    #link1 { top: 10%; left: 15%; }
+    #link2 { top: 40%; left: 70%; }
+    #link3 { top: 70%; left: 25%; }
+    #link4 { top: 20%; left: 55%; }
+
+    @keyframes floatAround {
+      0%   { transform: translate(0, 0); }
+      25%  { transform: translate(10px, -10px); }
+      50%  { transform: translate(-10px, 10px); }
+      75%  { transform: translate(5px, -5px); }
+      100% { transform: translate(0, 0); }
+    }
+
+    .floating {
+      animation: floatAround 3s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="links">
+    <a id="link1" class="link floating" href="I like Food & Treats.html">I like Food & Treats</a>
+    <a id="link2" class="link floating" href="I like Playing.html" >I like Playing</a>
+    <a id="link3" class="link floating" href="page 1 .html" >Go back</a>
+    <a id="link4" class="link floating" href="I like Attention & Petting.html">I like Attention & Petting</a>
+  
+</div>
+  <script>
+    // Stop floating after 5 seconds
+    setTimeout(() => {
+      document.querySelectorAll('.link').forEach(el => {
+        el.classList.remove('floating');
+      });
+    }, 5000);
+  </script>
+
+</body>
+</html>

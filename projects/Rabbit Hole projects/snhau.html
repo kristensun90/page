@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dog Likes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fffaf3;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      padding: 10px 16px;
+      background-color: #5a3212;
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .menu a:hover {
+      background-color: #7a4b24;
+    }
+
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu links -->
+  <div class="menu">
+    <a href="#" onclick="loadPage('I like Food & Treats.html')">I like Food & Treats</a>
+    <a href="#" onclick="loadPage('playing.html')">I like Playing</a>
+    <a href="#" onclick="loadPage('walks.html')">Going for Walks</a>
+    <a href="#" onclick="loadPage('attention.html')">I like Attention & Petting</a>
+  </div>
+
+  <!-- iFrame for loading other HTML pages -->
+  <iframe id="contentFrame" src=""></iframe>
+
+  <script>
+    function loadPage(filename) {
+      document.getElementById('contentFrame').src = filename;
+    }
+  </script>
+
+</body>
+</html>

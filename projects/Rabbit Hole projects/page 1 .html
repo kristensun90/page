@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            width: 300px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        
+        .dog-svg {
+            stroke: #8B4513;
+            stroke-width: 3;
+            fill: none;
+        }
+        
+        .links {
+            margin-top: 30px;
+        }
+        
+        .links a {
+            display: block;
+            margin: 10px;
+            color: #8B4513;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            transition: color 0.3s;
+        }
+        
+        .links a:hover {
+            color: #654321;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg class="dog-svg" width="200" height="200" viewBox="0 0 100 100">
+            <!-- Body -->
+            <path d="M 30 60 Q 50 30 70 60" />
+            
+            <!-- Head -->
+            <circle cx="50" cy="30" r="15" />
+            
+            <!-- Ears -->
+            <line x1="40" y1="15" x2="30" y2="5"/>
+            <line x1="60" y1="15" x2="70" y2="5"/>
+            
+            <!-- Legs -->
+            <line x1="35" y1="60" x2="35" y2="90"/>
+            <line x1="45" y1="60" x2="45" y2="90"/>
+            <line x1="65" y1="60" x2="65" y2="90"/>
+            <line x1="55" y1="60" x2="55" y2="90"/>
+            
+            <!-- Tail -->
+            <path d="M 70 60 Q 85 50 80 65" />
+            
+            <!-- Eyes -->
+            <circle cx="45" cy="25" r="2" fill="#8B4513"/>
+            <circle cx="55" cy="25" r="2" fill="#8B4513"/>
+        </svg>
+
+        <div class="links">
+            <a href="page 2.html">Hi! I am a dog</a>
+        </div>
+    </div>
+</body>
+</html>
