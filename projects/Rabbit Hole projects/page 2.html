@@ -18,10 +18,8 @@
       position: absolute;
       font-size: 18px;
       font-weight: bold;
-      color: #5a3212;
       text-decoration: none;
       padding: 6px 10px;
-      border-radius: 8px;
       transition: transform 0.3s;
     }
 
@@ -36,17 +34,6 @@
     #link3 { top: 70%; left: 25%; }
     #link4 { top: 20%; left: 55%; }
 
-    @keyframes floatAround {
-      0%   { transform: translate(0, 0); }
-      25%  { transform: translate(10px, -10px); }
-      50%  { transform: translate(-10px, 10px); }
-      75%  { transform: translate(5px, -5px); }
-      100% { transform: translate(0, 0); }
-    }
-
-    .floating {
-      animation: floatAround 3s ease-in-out infinite;
-    }
   </style>
 </head>
 <body>
@@ -56,16 +43,7 @@
     <a id="link2" class="link floating" href="I like Playing.html" >I like Playing</a>
     <a id="link3" class="link floating" href="page 1 .html" >Go back</a>
     <a id="link4" class="link floating" href="I like Attention & Petting.html">I like Attention & Petting</a>
-  
-</div>
-  <script>
-    // Stop floating after 5 seconds
-    setTimeout(() => {
-      document.querySelectorAll('.link').forEach(el => {
-        el.classList.remove('floating');
-      });
-    }, 5000);
-  </script>
 
+    
 </body>
 </html>
