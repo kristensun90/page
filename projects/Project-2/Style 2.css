@@ -1,0 +1,50 @@
+body {
+  background-color: #fff8e1;
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+  padding: 20px;
+  color: #f0edcf;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.food-item {
+  position: relative;
+  padding: 15px 25px;
+  background-color: #fff8e1;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.food-image {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  margin-top: 10px;
+  border-radius: 10px;
+  display: none;
+}
+
+.food-item:hover .food-image {
+  display: block;
+}
+
+.button-wrapper {
+  position: relative;
+}
+

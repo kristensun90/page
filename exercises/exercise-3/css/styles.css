@@ -1,0 +1,139 @@
+/* ----------------------------
+Animation
+-------------------------- */
+
+  @keyframes logo-rotation{
+    0%{
+        transform: rotate(0deg);
+    
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+    }
+
+
+     
+  #logo{
+    font-size:38px;
+    padding:38px;
+    display:inline-block;
+    animation: logo-rotation 2s ease infinite alternate;
+  }
+
+
+  /* ----------------------------
+Animation
+-------------------------- */
+
+@font-face{
+    font-family:"MaziusDisplay";
+  src: url("fonts/MaziusDisplay-Regular.woff2") format("woff2");
+  font-weight:400;
+  font-style: normal;
+
+}
+
+h1{
+    font-family:"MaziusDisplay";
+    font-size:xx-large;
+}
+
+h2,h3,h4,h5 {
+    font-family:"MaziusDisplay";
+    font-weight: 100;
+    font-stretch: 100%;
+}
+ 
+ body {
+    background-color: hsl(45, 30%, 92%);
+    margin: 0;
+  }
+  
+  main {
+    box-sizing: border-box;
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    padding: 50px;
+    background-color: rgb(225, 219, 189);
+  }
+  
+  /* ---------------------------------------------- */
+  
+  /* CSS with nesting */
+  
+  nav {
+    box-sizing: border-box;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+  
+    ol {
+      list-style: none;
+    }
+    
+    a {
+      color: green;
+    }
+  
+    a:hover {
+      background-color: chartreuse;
+    }
+  }
+  
+  /* Same CSS without nesting */
+  
+  nav ol {
+    list-style: none;
+  }
+  
+  nav a {
+    color: green;
+  }
+  
+  nav a:hover {
+    background-color: chartreuse;
+    color:black
+  }
+   
+  #logo{
+    font-size:38px;
+    padding:38px;
+    display:inline-block;
+    animation: logo-rotation 2s ease infinite alternate;
+  }
+
+  /* ---------------------------------------------- */
+  
+  img {
+    display: block;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    border: 2px solid #c16b25;
+    padding: 20px;
+  }
+  
+  p {
+    color: rgb(147, 81, 16);
+  }
+  
+  h3 + p {
+    text-indent: 50px;
+  }
+  
+  h4 ~ p {
+    color: blueviolet;
+  }
+  
+  aside {
+    box-sizing: border-box;
+    border: 2px solid crimson;
+    padding: 1rem;
+  }
+  
+  aside > h4 ~ p {
+    color: crimson;
+  }
