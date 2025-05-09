@@ -1,0 +1,148 @@
+body {
+    font-family: 'MaziusDisplay', monospace;
+    background: #fffdf7;
+    margin: 0;
+    color: #333;
+    text-align: center;
+
+    @font-face{
+        font-family:"MaziusDisplay";
+      src: url("fonts/MaziusDisplay-Regular.woff2") format("woff2");
+      font: weight 20px;;
+      font-style: normal;
+    
+    }
+  }
+
+/* Animation keyframes */
+@keyframes slideFade {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  header {
+    background: #ffe6e6;
+    padding: 2rem;
+    animation: slideFade 1s ease-out;
+  }
+  
+  
+  
+  header {
+    background: #ffe6e6;
+    padding: 2rem;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 2rem;
+  }
+
+  .item {
+    text-decoration: none;
+    color: inherit;
+    width: 400px;
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: block;
+    box-shadow: 0 3px 10px rgba(46, 10, 97, 0.1);
+    transition: transform 0.3s;
+    position: relative;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+
+  .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .item p {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    background: rgba(43, 6, 82, 0.5);
+    color: white;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+  }
+  
+  
+  .detail {
+    display: none;
+    padding: 2rem;
+    background: #f9f9ff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 100;
+    box-sizing: border-box;
+  }
+  
+  .detail img {
+    max-width: 400px;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+  
+  .detail:target {
+    display: block;
+  }
+  
+  
+  
+  .close {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    background: #eee;
+    color: #444;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+  
+  .video-wrapper {
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  video, iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    max-height: 70vh;
+    object-fit: contain;
+  }
+  
